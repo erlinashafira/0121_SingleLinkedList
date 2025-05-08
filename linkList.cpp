@@ -62,7 +62,7 @@ class LinkedList
             return (START == NULL);
         }
 
-        bool search (int nim, Node **previous, Node **current)
+        bool Search (int nim, Node **previous, Node **current)
         {
             *previous = START;
             *current = START;
@@ -127,7 +127,27 @@ int main()
     cout << "3.Menampilkan semua dta didalam list" << endl;
     cout << "4. Mencari data dalam list" << endl;
     cout << "5. Keluar" << endl;
-    cout <<endl
+    cout << endl
+        << "Masukkan Pilihan (1-5): ";
+    cin >> ch;
+    switch (ch)
+    {
+        case '1':
+        {
+            mhs.addNode();
+            break;
+        }
+
+        case '2':
+        {
+            if (mhs.listEmpty())
+            {
+                cout << endl
+                    << "List Kosong" << endl;
+                break;
+            }
+        }
+    }
     }
   
 }
